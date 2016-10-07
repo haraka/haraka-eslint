@@ -1,5 +1,5 @@
 {
-  "name": "haraka-eslint",
+  "name": "eslint-plugin-haraka",
   "version": "1.0.0",
   "description": "Eslint rules for Haraka projects",
   "main": "index.js",
