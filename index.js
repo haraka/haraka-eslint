@@ -7,6 +7,7 @@ module.exports = {
   "installedESLint": true,
   "root": true,
   "rules": {
+    "comma-dangle": "only-multiline",
     "dot-notation": 2,
     "indent": [2, 2, {"SwitchCase": 1}],
     "one-var": [2, "never"],
