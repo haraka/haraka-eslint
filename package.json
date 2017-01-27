@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-haraka",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "eslint rules for Haraka projects",
   "main": "index.js",
   "scripts": {
