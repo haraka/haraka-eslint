@@ -12,7 +12,8 @@ In your Haraka plugin:
 {
   "plugins": [
     "haraka"
-  ]
+  ],
+  "extends": ["eslint:recommended", "plugin:haraka/recommended"],
 }
 `
 3. Add within the "scripts" section of `package.json`:

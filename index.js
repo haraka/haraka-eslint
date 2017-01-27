@@ -11,7 +11,7 @@ var requiredRules = {
         "after": true
     }],
     "no-delete-var": 2,
-    "no-empty":  1,
+    "no-empty": ["error", { "allowEmptyCatch": true }]
     "no-label-var": 2,
     "no-shadow": 2,
     "no-unused-vars": [ 1, { "args": "none" }],
