@@ -1,3 +1,8 @@
+# 1.0.4 - 2017-02-01
+
+* fixed missing comma at end of no-empty rule
+* added "no-undef": 1  (warnings only)
+
 # 1.0.3 - 2017-01-27
 
 * Updated rules from Haraka main repo

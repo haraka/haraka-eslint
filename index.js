@@ -11,9 +11,10 @@ var requiredRules = {
         "after": true
     }],
     "no-delete-var": 2,
-    "no-empty": ["error", { "allowEmptyCatch": true }]
+    "no-empty": ["error", { "allowEmptyCatch": true }],
     "no-label-var": 2,
     "no-shadow": 2,
+    "no-undef": 1,
     "no-unused-vars": [ 1, { "args": "none" }],
     "space-before-function-paren": [2, { "anonymous": "always", "named": "always" }]
 };
