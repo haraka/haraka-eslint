@@ -1,4 +1,4 @@
-# 1.0.4 - 2017-02-01
+# 1.0.5 - 2017-02-01
 
 * fixed missing comma at end of no-empty rule
 * added "no-undef": 1  (warnings only)
