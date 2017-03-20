@@ -1,5 +1,6 @@
 
 var fs = require('fs');
+var path = require('path');
 
 var requiredRules = {
     "comma-dangle": [2, "only-multiline"],
@@ -23,7 +24,7 @@ var requiredRules = {
 // they might not always be the same...
 var recommendedRules = requiredRules;
 
-JSON.parse(fs.readFileSync('.eslintrc.json'));
+JSON.parse(fs.readFileSync(path.join(__dirname, '.eslintrc.json')));
 
 module.exports = {
     rules: requiredRules,
