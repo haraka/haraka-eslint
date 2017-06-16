@@ -1,3 +1,8 @@
+# 1.0.6 - 2017-06-15
+
+* eslint 4 enables no-useless-escape. Reduces error to warning until that rule
+  is less brain damaged.
+
 # 1.0.5 - 2017-02-01
 
 * fixed missing comma at end of no-empty rule
