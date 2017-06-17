@@ -1,8 +1,7 @@
 
-var fs = require('fs');
-var path = require('path');
+"use strict";
 
-var requiredRules = {
+var recommendedRules = {
     "comma-dangle": [2, "only-multiline"],
     "dot-notation": 2,
     "indent": [2, 4, {"SwitchCase": 1}],
@@ -26,13 +25,7 @@ var requiredRules = {
     "no-useless-escape": 1
 };
 
-// they might not always be the same...
-var recommendedRules = requiredRules;
-
-JSON.parse(fs.readFileSync(path.join(__dirname, '.eslintrc.json')));
-
 module.exports = {
-    rules: requiredRules,
     configs: {
         recommended: {
             "env": {
