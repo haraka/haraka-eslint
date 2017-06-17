@@ -25,7 +25,17 @@ var recommendedRules = {
     "no-useless-escape": 1
 };
 
+// This is really here so we know how this "rules" section is used in the future
+// - If you want to enable this rule you can by adding: `"haraka/no-newline-no-curly-if": 2` to
+// your module's list of rules.
+// The rule in case you're curious prevents: `if (bool)\n  do_thing()` and forces if()s with
+// no curly to be on a single line.
+var rules = {
+    "no-newline-no-curly-if": require('./rules/no-newline-no-curly-if'),
+};
+
 module.exports = {
+    rules: rules,
     configs: {
         recommended: {
             "env": {
