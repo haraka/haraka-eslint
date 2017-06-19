@@ -1,8 +1,7 @@
 
-var fs = require('fs');
-var path = require('path');
+"use strict";
 
-var requiredRules = {
+var recommendedRules = {
     "comma-dangle": [2, "only-multiline"],
     "dot-notation": 2,
     "indent": [2, 4, {"SwitchCase": 1}],
@@ -26,13 +25,17 @@ var requiredRules = {
     "no-useless-escape": 1
 };
 
-// they might not always be the same...
-var recommendedRules = requiredRules;
-
-JSON.parse(fs.readFileSync(path.join(__dirname, '.eslintrc.json')));
+// This is really here so we know how this "rules" section is used in the future
+// - If you want to enable this rule you can by adding: `"haraka/no-newline-no-curly-if": 2` to
+// your module's list of rules.
+// The rule in case you're curious prevents: `if (bool)\n  do_thing()` and forces if()s with
+// no curly to be on a single line.
+var rules = {
+    "no-newline-no-curly-if": require('./rules/no-newline-no-curly-if'),
+};
 
 module.exports = {
-    rules: requiredRules,
+    rules: rules,
     configs: {
         recommended: {
             "env": {
