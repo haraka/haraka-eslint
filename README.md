@@ -3,9 +3,9 @@
 [![Build Status][ci-img]][ci-url]
 [![Windows Build Status][ci-win-img]][ci-win-url]
 [![Code Climate][clim-img]][clim-url]
-[![Code Coverage][cov-img]][cov-url]
 [![Greenkeeper badge][gk-img]][gk-url]
 [![NPM][npm-img]][npm-url]
+<!--[![Code Coverage][cov-img]][cov-url]-->
 
 ## Install
 
