@@ -54,5 +54,5 @@ If you disagree, you can add custom rules to your .eslintrc.json file.
 [clim-url]: https://codeclimate.com/github/haraka/haraka-eslint
 [gk-img]: https://badges.greenkeeper.io/haraka/haraka-eslint.svg
 [gk-url]: https://greenkeeper.io/
-[npm-img]: https://nodei.co/npm/haraka-eslint.png
-[npm-url]: https://www.npmjs.com/package/haraka-eslint
+[npm-img]: https://nodei.co/npm/eslint-plugin-haraka.png
+[npm-url]: https://www.npmjs.com/package/eslint-plugin-haraka
