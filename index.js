@@ -22,7 +22,12 @@ var recommendedRules = {
     // until this rule gets smart enough to realize that /\./ matches *only*
     // a literal dot and removing the \ does signficantly change the behavior,
     // this will be a warning only
-    "no-useless-escape": 1
+    "no-useless-escape": "warn",
+    "no-path-concat": "error",
+    "no-cond-assign": ["error", "except-parens"],
+    "no-constant-condition": ["error", { "checkLoops": false }],
+    "prefer-const": ["error", {"ignoreReadBeforeAssign": true}],
+    "no-var": "error"
 };
 
 // This is really here so we know how this "rules" section is used in the future
