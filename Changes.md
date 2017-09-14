@@ -1,3 +1,7 @@
+# 1.0.8 - 2017-09-13
+
+* import rules from haraka/Haraka
+
 # 1.0.7 - 2017-06-16
 
 * Fixes the format of an eslint plugin. The "rules" section is for custom
