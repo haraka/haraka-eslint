@@ -1,3 +1,7 @@
+# 1.0.9 - 2017-09-16
+
+* remove no-useless-escape rule
+
 # 1.0.8 - 2017-09-13
 
 * import rules from haraka/Haraka

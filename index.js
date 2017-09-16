@@ -19,10 +19,6 @@ var recommendedRules = {
     "no-unused-vars": [ 1, { "args": "none" }],
     "space-before-function-paren": [2, { "anonymous": "always", "named": "always" }],
     "no-console": 0,
-    // until this rule gets smart enough to realize that /\./ matches *only*
-    // a literal dot and removing the \ does signficantly change the behavior,
-    // this will be a warning only
-    "no-useless-escape": "warn",
     "no-path-concat": "error",
     "no-cond-assign": ["error", "except-parens"],
     "no-constant-condition": ["error", { "checkLoops": false }],
