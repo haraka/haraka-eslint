@@ -1,7 +1,6 @@
+'use strict';
 
-"use strict";
-
-var recommendedRules = {
+const recommendedRules = {
     "comma-dangle": [2, "only-multiline"],
     "dot-notation": 2,
     "indent": [2, 4, {"SwitchCase": 1}],
@@ -23,7 +22,8 @@ var recommendedRules = {
     "no-cond-assign": ["error", "except-parens"],
     "no-constant-condition": ["error", { "checkLoops": false }],
     "prefer-const": ["error", {"ignoreReadBeforeAssign": true}],
-    "no-var": "error"
+    "no-var": "error",
+    "brace-style": ["error", "stroustrup", { "allowSingleLine": true }]
 };
 
 // This is really here so we know how this "rules" section is used in the future
@@ -31,7 +31,7 @@ var recommendedRules = {
 // your module's list of rules.
 // The rule in case you're curious prevents: `if (bool)\n  do_thing()` and forces if()s with
 // no curly to be on a single line.
-var rules = {
+const rules = {
     "no-newline-no-curly-if": require('./rules/no-newline-no-curly-if'),
 };
 

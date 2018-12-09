@@ -1,3 +1,7 @@
+# 1.0.10 - 2018-12-09
+
+* add brace-style rule
+
 # 1.0.9 - 2017-09-16
 
 * remove no-useless-escape rule
