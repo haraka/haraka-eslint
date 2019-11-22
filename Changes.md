@@ -2,6 +2,8 @@
 ## 1.0.12 - 2019-11-22
 
 * add prefer-template rule
+* add eslint parserOptions: ecmaVersion: 2017
+* convert .eslintrc.json to .eslintrc.yaml
 
 
 ## 1.0.11 - 2019-07-09
