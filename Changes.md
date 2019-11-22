@@ -1,4 +1,9 @@
 
+## 1.0.12 - 2019-11-22
+
+* add prefer-template rule
+
+
 ## 1.0.11 - 2019-07-09
 
 * add brace-style rule

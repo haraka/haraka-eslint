@@ -23,8 +23,9 @@ const recommendedRules = {
     "no-constant-condition": ["error", { "checkLoops": false }],
     "prefer-const": ["error", {"ignoreReadBeforeAssign": true}],
     "no-var": "error",
-    "object-shorthand": ["warn", "always"],
-    "brace-style": ["error", "stroustrup", { "allowSingleLine": true }]
+    "object-shorthand": ["warning", "always"],
+    "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
+    "prefer-template": "warning"
 };
 
 // This is really here so we know how this "rules" section is used in the future
