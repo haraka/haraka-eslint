@@ -1,10 +1,10 @@
 {
   "name": "eslint-plugin-haraka",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "eslint rules for Haraka projects",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint *.js"
+    "test": "npx eslint *.js"
   },
   "repository": {
     "type": "git",
