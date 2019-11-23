@@ -1,4 +1,9 @@
 
+## 1.0.13 - 2019-11-22
+
+* eslint prefers 'warn' to 'warning' <sigh>
+
+
 ## 1.0.12 - 2019-11-22
 
 * add prefer-template rule
