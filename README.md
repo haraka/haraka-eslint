@@ -3,9 +3,7 @@
 [![Build Status][ci-img]][ci-url]
 [![Windows Build Status][ci-win-img]][ci-win-url]
 [![Code Climate][clim-img]][clim-url]
-[![Greenkeeper badge][gk-img]][gk-url]
 [![NPM][npm-img]][npm-url]
-<!--[![Code Coverage][cov-img]][cov-url]-->
 
 ## Install
 
@@ -13,23 +11,21 @@ In your Haraka plugin:
 
 1. Add to NPM dependencies:
     `npm install --save-dev eslint eslint-plugin-haraka`
+
 2. Install an eslint config file:
 
 ```sh
-tee .eslintrc.json <<EOLINT
-{
-  "plugins": [
-    "haraka"
-  ],
-  "extends": ["eslint:recommended", "plugin:haraka/recommended"],
-}
+tee .eslintrc.yaml <<EOLINT
+plugins: [ haraka ]
+extends: [ eslint:recommended, plugin:haraka/recommended ]
+EOLINT
 ```
 
 3. Add within the "scripts" section of `package.json`:
 
 ```json
-"lint": "./node_modules/.bin/eslint *.js test/**/*.js"
-"lintfix": "./node_modules/.bin/eslint --fix *.js test/**/*.js"
+"lint": "npx eslint *.js test/*.js"
+"lintfix": "npx eslint --fix *.js test/*.js"
 ```
 
 4. Add to the "script" section of .travis.yml:
@@ -58,7 +54,5 @@ If you disagree, you can add custom rules to your .eslintrc.json file.
 [cov-url]: https://codecov.io/github/haraka/haraka-eslint
 [clim-img]: https://codeclimate.com/github/haraka/haraka-eslint/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-eslint
-[gk-img]: https://badges.greenkeeper.io/haraka/haraka-eslint.svg
-[gk-url]: https://greenkeeper.io/
 [npm-img]: https://nodei.co/npm/eslint-plugin-haraka.png
 [npm-url]: https://www.npmjs.com/package/eslint-plugin-haraka
