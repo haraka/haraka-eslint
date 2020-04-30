@@ -28,11 +28,9 @@ const recommendedRules = {
     "prefer-template": "warn"
 };
 
-// This is really here so we know how this "rules" section is used in the future
-// - If you want to enable this rule you can by adding: `"haraka/no-newline-no-curly-if": 2` to
-// your module's list of rules.
-// The rule in case you're curious prevents: `if (bool)\n  do_thing()` and forces if()s with
-// no curly to be on a single line.
+// This is here so we know how this "rules" section is used in the future
+// - You can enable this rule by adding: `"haraka/no-newline-no-curly-if": 2` to your module's list of rules.
+// The rule prevents: `if (bool)\n  do_thing()` and forces if()s with no curly to be on a single line.
 const rules = {
     "no-newline-no-curly-if": require('./rules/no-newline-no-curly-if'),
 };
