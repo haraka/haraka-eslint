@@ -1,4 +1,11 @@
 
+## 1.0.14 - 2021-02-03
+
+* CI travis -> Github Actions
+* dep eslint >= 7 (was 6)
+* ecmaVersion 2017 -> 2018
+
+
 ## 1.0.13 - 2019-11-22
 
 * eslint prefers 'warn' to 'warning' <sigh>

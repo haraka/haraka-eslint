@@ -50,8 +50,6 @@ If you disagree, you can add custom rules to your .eslintrc.json file.
 [ci-url]: https://travis-ci.org/haraka/haraka-eslint
 [ci-win-img]: https://ci.appveyor.com/api/projects/status/CHANGETHIS?svg=true
 [ci-win-url]: https://ci.appveyor.com/project/msimerson/haraka-eslint
-[cov-img]: https://codecov.io/github/haraka/haraka-eslint/coverage.svg
-[cov-url]: https://codecov.io/github/haraka/haraka-eslint
 [clim-img]: https://codeclimate.com/github/haraka/haraka-eslint/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-eslint
 [npm-img]: https://nodei.co/npm/eslint-plugin-haraka.png
