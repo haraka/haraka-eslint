@@ -39,11 +39,11 @@ To check your project against lint rules:
 
 `npm run lint`
 
-Step #4 above does this automatically when Travis is set up.
+Step #4 above does this automatically when CI tests are set up.
 
 If you agree with the lint suggestions, you can run `npm run lintfix` and the changes will be made to your files automatically.
 
-If you disagree, you can add custom rules to your .eslintrc.json file.
+If you disagree, you can add custom rules to your .eslintrc file.
 
 
 <!-- leave these buried at the bottom of the document -->
