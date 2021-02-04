@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/haraka/haraka-eslint#readme",
   "devDependencies": {
-    "eslint": ">=6"
+    "eslint": ">=7"
   }
 }

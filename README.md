@@ -3,9 +3,7 @@
 [![Build Status][ci-img]][ci-url]
 [![Windows Build Status][ci-win-img]][ci-win-url]
 [![Code Climate][clim-img]][clim-url]
-[![Greenkeeper badge][gk-img]][gk-url]
 [![NPM][npm-img]][npm-url]
-<!--[![Code Coverage][cov-img]][cov-url]-->
 
 ## Install
 
@@ -54,11 +52,7 @@ If you disagree, you can add custom rules to your .eslintrc.json file.
 [ci-url]: https://travis-ci.org/haraka/haraka-eslint
 [ci-win-img]: https://ci.appveyor.com/api/projects/status/CHANGETHIS?svg=true
 [ci-win-url]: https://ci.appveyor.com/project/msimerson/haraka-eslint
-[cov-img]: https://codecov.io/github/haraka/haraka-eslint/coverage.svg
-[cov-url]: https://codecov.io/github/haraka/haraka-eslint
 [clim-img]: https://codeclimate.com/github/haraka/haraka-eslint/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-eslint
-[gk-img]: https://badges.greenkeeper.io/haraka/haraka-eslint.svg
-[gk-url]: https://greenkeeper.io/
 [npm-img]: https://nodei.co/npm/eslint-plugin-haraka.png
 [npm-url]: https://www.npmjs.com/package/eslint-plugin-haraka
