@@ -1,37 +1,28 @@
-name: CI Tests
+name: CI
 
 on: [ push, pull_request ]
 
+env:
+  CI: true
+
 jobs:
-
-  ci-test:
-
+  test:
     runs-on: ${{ matrix.os }}
-
     strategy:
       matrix:
-        os: [ ubuntu-latest ]
-        node-version: [10.x, 12.x, 14.x]
+        os: [ ubuntu-latest, windows-latest ]
+        node-version: [ 14, 16, 18 ]
       fail-fast: false
-
     steps:
-    - uses: actions/checkout@v2
-      name: Checkout Code
-      with:
-        fetch-depth: 1
-
-    - uses: actions/setup-node@v1
-      name: Use Node.js ${{ matrix.node-version }}
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      name: Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install
-      run: npm install
+    - run: npm install
 
     - name: Test
       run: |
         npm run test
         node index.js
-
-      env:
-        CI: true

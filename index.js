@@ -1,23 +1,25 @@
 'use strict';
 
+// 0 = off
+// 1 = warn
+// 2 = error
+
 const recommendedRules = {
-    "comma-dangle": [2, "only-multiline"],
-    "dot-notation": 2,
-    "indent": [2, 4, {"SwitchCase": 1}],
-    "one-var": [2, "never"],
-    "no-trailing-spaces": [2, { "skipBlankLines": false }],
-    "keyword-spacing": [2, {
+    "comma-dangle": ["error", "only-multiline"],
+    "dot-notation": "error",
+    "indent": ["error", 4, {"SwitchCase": 1}],
+    "one-var": ["error", "never"],
+    "no-trailing-spaces": ["error", { "skipBlankLines": false }],
+    "keyword-spacing": ["error", {
         "before": true,
         "after": true
     }],
-    "no-delete-var": 2,
     "no-empty": ["error", { "allowEmptyCatch": true }],
-    "no-label-var": 2,
-    "no-shadow": 2,
-    "no-undef": 1,
-    "no-unused-vars": [ 1, { "args": "none" }],
-    "space-before-function-paren": [2, { "anonymous": "always", "named": "always" }],
-    "no-console": 0,
+    "no-shadow": "error",
+    "no-undef": "warn",
+    "no-unused-vars": [ "warn", { "args": "none" }],
+    "space-before-function-paren": ["error", { "anonymous": "always", "named": "always" }],
+    "no-console": "off",
     "no-path-concat": "error",
     "no-cond-assign": ["error", "except-parens"],
     "no-constant-condition": ["error", { "checkLoops": false }],

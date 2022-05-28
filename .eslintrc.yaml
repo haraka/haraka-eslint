@@ -1,8 +1,6 @@
 env:
   node: true
   es6: true
-
-parserOptions:
-  ecmaVersion: 2018
+  es2020: true
 
 extends: [ "eslint:recommended" ]

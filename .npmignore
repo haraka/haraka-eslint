@@ -7,3 +7,4 @@
 appveyor.yml
 .travis.yml
 .eslintrc.yaml
+codecov.yml
