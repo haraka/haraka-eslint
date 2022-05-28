@@ -24,11 +24,11 @@ EOLINT
 3. Add within the "scripts" section of `package.json`:
 
 ```json
-"lint": "npx eslint *.js test/*.js"
-"lintfix": "npx eslint --fix *.js test/*.js"
+"lint": "npx eslint *.js test"
+"lintfix": "npx eslint --fix *.js test"
 ```
 
-4. Add to the "script" section of .travis.yml:
+4. Within your CI workflow:
 
 `npm run lint`
 
@@ -46,8 +46,8 @@ If you disagree, you can add custom rules to your .eslintrc file.
 
 
 <!-- leave these buried at the bottom of the document -->
-[ci-img]: https://github.com/haraka/haraka-eslint/actions/workflows/ci-test.yml/badge.svg
-[ci-url]: https://github.com/haraka/haraka-eslint/actions/workflows/ci-test.yml
+[ci-img]: https://github.com/haraka/haraka-eslint/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/haraka/haraka-eslint/actions/workflows/ci.yml
 [clim-img]: https://codeclimate.com/github/haraka/haraka-eslint/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-eslint
 [npm-img]: https://nodei.co/npm/eslint-plugin-haraka.png
