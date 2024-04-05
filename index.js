@@ -5,20 +5,12 @@
 // 2 = error
 
 const recommendedRules = {
-    "comma-dangle": ["error", "only-multiline"],
     "dot-notation": "error",
-    "indent": ["error", 4, {"SwitchCase": 1}],
     "one-var": ["error", "never"],
-    "no-trailing-spaces": ["error", { "skipBlankLines": false }],
-    "keyword-spacing": ["error", {
-        "before": true,
-        "after": true
-    }],
     "no-empty": ["error", { "allowEmptyCatch": true }],
     "no-shadow": "error",
     "no-undef": "warn",
     "no-unused-vars": [ "warn", { "args": "none" }],
-    "space-before-function-paren": ["error", { "anonymous": "always", "named": "always" }],
     "no-console": "off",
     "no-path-concat": "error",
     "no-cond-assign": ["error", "except-parens"],
@@ -26,7 +18,6 @@ const recommendedRules = {
     "prefer-const": ["error", {"ignoreReadBeforeAssign": true}],
     "no-var": "error",
     "object-shorthand": ["warn", "always"],
-    "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
     "prefer-template": "warn"
 };
 
