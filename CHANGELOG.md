@@ -6,10 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 #### [1.0.16] - 2024-04-05
 
-- remove eslint deprecated formatting rules
+- chore: remove eslint deprecated formatting rules
   - see https://eslint.org/blog/2023/10/deprecating-formatting-rules/
-- remove .npmignore, populate [files] in package.json
-- add CodeQL workflow for GitHub code scanning (#27)
+- chore: remove .npmignore, populate [files] in package.json
+- chore: add CodeQL workflow for GitHub code scanning (#27)
+- ci: update to use shared workflows
 - doc(README): fix badge URL, update usage
 
 #### [1.0.15] - 2022-05-28
