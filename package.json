@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "lint": "npx eslint@^8 *.js",
-    "test": "npx eslint@^8 *.js"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
