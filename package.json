@@ -1,10 +1,15 @@
 {
-  "name": "eslint-plugin-haraka",
-  "version": "1.0.16",
-  "description": "eslint rules for Haraka projects",
+  "name": "@haraka/eslint-config",
+  "version": "1.1.0",
+  "description": "eslint config for Haraka projects",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "main": "index.js",
   "files": [
-    "CHANGELOG.md", "rules"
+    "CHANGELOG.md",
+    "rules"
   ],
   "scripts": {
     "lint": "npx eslint@^8 *.js",
@@ -26,5 +31,8 @@
     "url": "https://github.com/haraka/haraka-eslint/issues"
   },
   "homepage": "https://github.com/haraka/haraka-eslint#readme",
-  "devDependencies": { }
+  "devDependencies": {},
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  }
 }

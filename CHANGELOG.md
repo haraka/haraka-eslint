@@ -64,7 +64,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 #### 1.0.5 - 2017-02-01
 
 - fixed missing comma at end of no-empty rule
-- added "no-undef": 1  (warnings only)
+- added "no-undef": 1 (warnings only)
 
 #### 1.0.3 - 2017-01-27
 
@@ -74,7 +74,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - added install and usage sections to README
 - added env:es6=true
 - added space-before-function-paren rule
-
 
 [1.0.11]: https://github.com/haraka/haraka-eslint/releases/tag/1.0.11
 [1.0.15]: https://github.com/haraka/haraka-eslint/releases/tag/1.0.15
