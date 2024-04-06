@@ -18,7 +18,6 @@ module.exports = {
   },
   rules: {
     // 0 = off // 1 = warn // 2 = error
-    "no-newline-no-curly-if": require("./rules/no-newline-no-curly-if"),
     "no-empty": ["error", { allowEmptyCatch: true }],
     "no-undef": "warn",
     "no-console": "off",
