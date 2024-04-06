@@ -5,9 +5,10 @@ module.exports = {
     node: true,
     es6: true,
     mocha: true,
+    es2022: true,
   },
   root: true,
-  extends: "eslint:recommended",
+  extends: [ "eslint:recommended" ],
   globals: {
     OK: true,
     CONT: true,
@@ -16,9 +17,11 @@ module.exports = {
     DENYDISCONNECT: true,
     DENYSOFTDISCONNECT: true,
   },
+  parserOptions: {
+    ecmaVersion: "latest",
+  },
   rules: {
     // 0 = off // 1 = warn // 2 = error
-    "no-newline-no-curly-if": require("./rules/no-newline-no-curly-if"),
     "no-empty": ["error", { allowEmptyCatch: true }],
     "no-undef": "warn",
     "no-console": "off",
