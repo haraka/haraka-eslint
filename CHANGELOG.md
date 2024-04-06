@@ -4,6 +4,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+#### [1.1.0] - 2024-04-06
+
+- chore: update to eslint 8 standards
+- publish as @haraka/eslint-config
+- add lint & prettier scripts
+- add Haraka globals, root:true, and envs
+- doc(README): update
+
 #### [1.0.16] - 2024-04-05
 
 - chore: remove eslint deprecated formatting rules
