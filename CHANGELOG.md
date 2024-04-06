@@ -4,6 +4,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+#### [1.1.1] - 2024-04-06
+
+- remove haraka:recommended
+- remove rules included in eslint:recommended
+
 #### [1.1.0] - 2024-04-06
 
 - chore: update to eslint 8 standards
