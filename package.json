@@ -12,7 +12,11 @@
     "rules"
   ],
   "scripts": {
-    "lint": "npx eslint@^8 *.js",
+    "format": "npm run prettier:fix && npm run lint:fix",
+    "lint": "npx eslint@8 *.js **/*.js",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier . --check",
+    "prettier:fix": "npx prettier . --write",
     "test": "node index.js"
   },
   "repository": {
