@@ -7,24 +7,26 @@
 
 ## Install
 
-In your Haraka plugin:
+In your Haraka module:
 
-1. Install an eslint config file:
+1. Add to NPM dependencies:
+
+`npm install --save-dev @haraka/eslint-config`
+
+2. Configure eslint:
 
 ```sh
-tee .eslintrc.yaml <<EOLINT
-extends: [ @haraka ]
-EOLINT
+echo 'extends: "@haraka"' > .eslintrc.yaml
 ```
 
-2. Add to the "scripts" section of `package.json`:
+3. Add to the "scripts" section of `package.json`:
 
 ```json
 "lint": "npx eslint@8 *.js test"
 "lint:fix": "npx eslint@8 --fix *.js test"
 ```
 
-3. Within your CI workflow:
+4. Within your CI workflow:
 
 `npm run lint`
 
@@ -34,11 +36,11 @@ To check your project against lint rules:
 
 `npm run lint`
 
-Step #3 above does this automatically when CI tests are set up.
+Step #4 above does this automatically when CI tests are set up.
 
 If you agree with the lint suggestions, you can run `npm run lint:fix` and the changes will be made to your files automatically.
 
-You can add custom rules to your .eslintrc file.
+Custom rules can be added to the .eslintrc file.
 
 <!-- leave these buried at the bottom of the document -->
 
