@@ -6,6 +6,7 @@
     "haraka",
     "lint",
     "eslint",
+    "eslintconfig",
     "test"
   ],
   "main": "index.js",
