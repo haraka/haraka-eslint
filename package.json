@@ -1,10 +1,12 @@
 {
   "name": "@haraka/eslint-config",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "eslint config for Haraka projects",
   "keywords": [
+    "haraka",
+    "lint",
     "eslint",
-    "eslintconfig"
+    "test"
   ],
   "main": "index.js",
   "files": [
@@ -13,22 +15,18 @@
   ],
   "scripts": {
     "format": "npm run prettier:fix && npm run lint:fix",
-    "lint": "npx eslint@8 *.js **/*.js",
-    "lint:fix": "npm run lint -- --fix",
+    "lint": "npx eslint@^8 *.js",
+    "lint:fix": "npx eslint@^8 *.js --fix",
     "prettier": "npx prettier . --check",
-    "prettier:fix": "npx prettier . --write",
-    "test": "node index.js"
+    "prettier:fix": "npx prettier . --write --log-level=warn",
+    "test": "node index.js",
+    "versions": "npx @msimerson/dependency-version-checker check",
+    "versions:fix": "npx @msimerson/dependency-version-checker update"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/haraka/haraka-eslint.git"
   },
-  "keywords": [
-    "haraka",
-    "lint",
-    "eslint",
-    "test"
-  ],
   "author": "Matt Simerson <matt@tnpi.net>",
   "license": "MIT",
   "bugs": {
