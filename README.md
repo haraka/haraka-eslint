@@ -7,25 +7,23 @@
 
 ## Install
 
-In your Haraka plugin:
+In your Haraka module:
 
 1. Add to NPM dependencies:
-    `npm install --save-dev eslint eslint-plugin-haraka`
 
-2. Install an eslint config file:
+`npm install --save-dev @haraka/eslint-config`
+
+2. Configure eslint:
 
 ```sh
-tee .eslintrc.yaml <<EOLINT
-plugins: [ haraka ]
-extends: [ eslint:recommended, plugin:haraka/recommended ]
-EOLINT
+echo 'extends: "@haraka"' > .eslintrc.yaml
 ```
 
-3. Add within the "scripts" section of `package.json`:
+3. Add to the "scripts" section of `package.json`:
 
 ```json
-"lint": "npx eslint *.js test"
-"lintfix": "npx eslint --fix *.js test"
+"lint": "npx eslint@8 *.js test"
+"lint:fix": "npx eslint@8 --fix *.js test"
 ```
 
 4. Within your CI workflow:
@@ -40,15 +38,15 @@ To check your project against lint rules:
 
 Step #4 above does this automatically when CI tests are set up.
 
-If you agree with the lint suggestions, you can run `npm run lintfix` and the changes will be made to your files automatically.
+If you agree with the lint suggestions, you can run `npm run lint:fix` and the changes will be made to your files automatically.
 
-If you disagree, you can add custom rules to your .eslintrc file.
-
+Custom rules can be added to the .eslintrc file.
 
 <!-- leave these buried at the bottom of the document -->
+
 [ci-img]: https://github.com/haraka/haraka-eslint/actions/workflows/ci.yml/badge.svg
 [ci-url]: https://github.com/haraka/haraka-eslint/actions/workflows/ci.yml
 [clim-img]: https://codeclimate.com/github/haraka/haraka-eslint/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-eslint
-[npm-img]: https://nodei.co/npm/eslint-plugin-haraka.png
-[npm-url]: https://www.npmjs.com/package/eslint-plugin-haraka
+[npm-img]: https://nodei.co/npm/@haraka/eslint-config.png
+[npm-url]: https://www.npmjs.com/package/@haraka/eslint-config

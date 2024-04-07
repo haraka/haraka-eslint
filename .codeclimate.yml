@@ -11,5 +11,5 @@ checks:
       threshold: 10
 
 ratings:
-   paths:
-   - "**.js"
+  paths:
+    - "**.js"

@@ -4,6 +4,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+#### [1.1.2] - 2024-04-06
+
+- remove rule no-newline-no-curly-if
+- remove haraka:recommended
+- remove rules included in eslint:recommended
+
+#### 1.1.0 - 2024-04-06
+
+- chore: update to eslint 8 standards
+- publish as @haraka/eslint-config
+- add lint & prettier scripts
+- add Haraka globals, root:true, and envs
+- doc(README): update
+
 #### [1.0.16] - 2024-04-05
 
 - chore: remove eslint deprecated formatting rules
@@ -64,7 +78,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 #### 1.0.5 - 2017-02-01
 
 - fixed missing comma at end of no-empty rule
-- added "no-undef": 1  (warnings only)
+- added "no-undef": 1 (warnings only)
 
 #### 1.0.3 - 2017-01-27
 
@@ -75,7 +89,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - added env:es6=true
 - added space-before-function-paren rule
 
-
 [1.0.11]: https://github.com/haraka/haraka-eslint/releases/tag/1.0.11
 [1.0.15]: https://github.com/haraka/haraka-eslint/releases/tag/1.0.15
 [1.0.16]: https://github.com/haraka/haraka-eslint/releases/tag/v1.0.16
+[1.1.2]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.2

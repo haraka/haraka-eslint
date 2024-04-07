@@ -1,17 +1,16 @@
 name: CI
 
-on: [ push, pull_request ]
+on: [push, pull_request]
 
 env:
   CI: true
 
 jobs:
-
   lint:
     uses: haraka/.github/.github/workflows/lint.yml@master
 
   test:
-    needs: [ lint ]
+    needs: [lint]
     uses: haraka/.github/.github/workflows/ubuntu.yml@master
 
   windows:
