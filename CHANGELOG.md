@@ -4,13 +4,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
-#### [1.1.2] - 2024-04-06
+### [1.1.3] - 2024-04-07
+
+- add env.es2020=true
+- add parserOptions.ecmaVersion = latest
+
+#### [1.1.1] - 2024-04-06
 
 - remove rule no-newline-no-curly-if
 - remove haraka:recommended
 - remove rules included in eslint:recommended
 
-#### 1.1.0 - 2024-04-06
+#### [1.1.0] - 2024-04-06
 
 - chore: update to eslint 8 standards
 - publish as @haraka/eslint-config
@@ -92,4 +97,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.0.11]: https://github.com/haraka/haraka-eslint/releases/tag/1.0.11
 [1.0.15]: https://github.com/haraka/haraka-eslint/releases/tag/1.0.15
 [1.0.16]: https://github.com/haraka/haraka-eslint/releases/tag/v1.0.16
-[1.1.2]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.2
+[1.1.0]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.0
+[1.1.1]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.1
+[1.1.3]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.3

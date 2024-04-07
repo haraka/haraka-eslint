@@ -16,7 +16,13 @@ In your Haraka module:
 2. Configure eslint:
 
 ```sh
-echo 'extends: "@haraka"' > .eslintrc.yaml
+cat  <<EOLINT > .eslintrc.yaml
+env:
+  node: true
+  es6: true
+  es2022: true
+extends: "@haraka"
+EOLINT
 ```
 
 3. Add to the "scripts" section of `package.json`:
