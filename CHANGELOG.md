@@ -6,8 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [1.1.3] - 2024-04-07
 
-- add lint & prettier scripts
-- doc(README): add env.es2020=true
+- add env.es2020=true
 - add parserOptions.ecmaVersion = latest
 
 #### [1.1.2] - 2024-04-06
