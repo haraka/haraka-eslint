@@ -4,6 +4,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.1.4] - 2024-04-22
+
+- doc(CONTRIBUTORS): added
+- add env.es2023=true
+- add rule: no-unused-vars: 1
+
 ### [1.1.3] - 2024-04-07
 
 - add env.es2020=true
@@ -100,3 +106,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.1.0]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.0
 [1.1.1]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.1
 [1.1.3]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.3
+[1.1.4]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.4
