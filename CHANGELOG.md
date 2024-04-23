@@ -4,6 +4,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.1.5] - 2024-04-22
+
+- add env.es2022=true
+- remove env.es2023, not supported by all eslint 8 versions
+
 ### [1.1.4] - 2024-04-22
 
 - doc(CONTRIBUTORS): added
@@ -107,3 +112,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.1.1]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.1
 [1.1.3]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.3
 [1.1.4]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.4
+[1.1.5]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.5
