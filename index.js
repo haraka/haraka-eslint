@@ -5,7 +5,8 @@ module.exports = {
     node: true,
     es6: true,
     mocha: true,
-    es2023: true,
+    es2022: true,
+    // es2023: true, /* enable with mocha 9 */
     // es2024: true, /* enable after 2024-04-30, when node 18 LTS ends */
   },
   root: true,

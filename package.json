@@ -1,6 +1,6 @@
 {
   "name": "@haraka/eslint-config",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "eslint config for Haraka projects",
   "keywords": [
     "haraka",
@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "format": "npm run prettier:fix && npm run lint:fix",
+    "format:check": "npm run prettier && npm run lint",
     "lint": "npx eslint@^8 *.js",
     "lint:fix": "npx eslint@^8 *.js --fix",
     "prettier": "npx prettier . --check",
