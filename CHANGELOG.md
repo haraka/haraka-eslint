@@ -4,6 +4,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [2.0.0] - 2025-01-07
+
+- BREAKING: depend on eslint 9
+- deps: declare peerDeps on @eslint/js and @eslint/eslintrc
+- index: globals reflect actual values (vs true)
+- index: bump es2022 -> es2024
+
 ### [1.1.5] - 2024-04-22
 
 - add env.es2022=true
@@ -113,3 +120,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.1.3]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.3
 [1.1.4]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.4
 [1.1.5]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.5
+[2.0.0]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.0
