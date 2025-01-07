@@ -4,6 +4,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [2.0.1] - 2025-01-07
+
+- deps(peer): don't pin versions
+
 ### [2.0.0] - 2025-01-07
 
 - BREAKING: depend on eslint 9
@@ -121,3 +125,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.1.4]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.4
 [1.1.5]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.5
 [2.0.0]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.0
+[2.0.1]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.1
