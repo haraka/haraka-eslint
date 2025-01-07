@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [2.0.2] - 2025-01-07
 
+- index: specify eslint globals as "readonly" (changed in v9)
 - update codeclimate config for eslint 9
 
 ### [2.0.1] - 2025-01-07
