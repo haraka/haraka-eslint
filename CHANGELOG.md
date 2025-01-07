@@ -4,6 +4,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [2.0.2] - 2025-01-07
+
+- index: specify eslint globals as "readonly" (changed in v9)
+- update codeclimate config for eslint 9
+
 ### [2.0.1] - 2025-01-07
 
 - deps(peer): don't pin versions
@@ -126,3 +131,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.1.5]: https://github.com/haraka/haraka-eslint/releases/tag/v1.1.5
 [2.0.0]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.0
 [2.0.1]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.1
+[2.0.2]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.2
