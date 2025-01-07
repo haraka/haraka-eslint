@@ -3,8 +3,6 @@
 [![Build Status][ci-img]][ci-url]
 [![Code Climate][clim-img]][clim-url]
 
-[![NPM][npm-img]][npm-url]
-
 ## Install
 
 In your Haraka module:
@@ -54,5 +52,3 @@ Custom rules can be added to the .eslintrc file.
 [ci-url]: https://github.com/haraka/haraka-eslint/actions/workflows/ci.yml
 [clim-img]: https://codeclimate.com/github/haraka/haraka-eslint/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-eslint
-[npm-img]: https://nodei.co/npm/@haraka/eslint-config.png
-[npm-url]: https://www.npmjs.com/package/@haraka/eslint-config
