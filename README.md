@@ -14,11 +14,11 @@ In your Haraka module:
 2. Configure eslint:
 
 ```sh
-cat  <<EOLINT > .eslintrc.yaml
+cat  <<EOLINT > eslint.config.mjs
 env:
   node: true
   es6: true
-  es2022: true
+  es2024: true
 extends: "@haraka"
 EOLINT
 ```
@@ -26,8 +26,8 @@ EOLINT
 3. Add to the "scripts" section of `package.json`:
 
 ```json
-"lint": "npx eslint@8 *.js test"
-"lint:fix": "npx eslint@8 --fix *.js test"
+"lint": "npx eslint *.js test"
+"lint:fix": "npx eslint --fix *.js test"
 ```
 
 4. Within your CI workflow:
@@ -44,7 +44,7 @@ Step #4 above does this automatically when CI tests are set up.
 
 If you agree with the lint suggestions, you can run `npm run lint:fix` and the changes will be made to your files automatically.
 
-Custom rules can be added to the .eslintrc file.
+Custom rules can be added to the eslint config file.
 
 <!-- leave these buried at the bottom of the document -->
 

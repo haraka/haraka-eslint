@@ -4,6 +4,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+- no-unused-vars": add { "caughtErrorsIgnorePattern": "ignore" }
+
 ### [2.0.2] - 2025-01-07
 
 - index: specify eslint globals as "readonly" (changed in v9)
