@@ -33,6 +33,6 @@ module.exports = {
     "no-console": "off",
     "no-constant-condition": ["error", { checkLoops: false }],
     "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
-    "no-unused-vars": ["warn", { "caughtErrorsIgnorePattern": "ignore" }],
+    "no-unused-vars": ["warn", { caughtErrorsIgnorePattern: "ignore" }],
   },
 };
