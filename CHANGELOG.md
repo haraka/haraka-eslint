@@ -4,6 +4,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [2.0.4] - 2026-03-17
+
+- deps(all): added ^versions in package.json
+- ci: updated CI configs
+- style: prettier
+
 ### [2.0.3] - 2025-07-01
 
 - no-unused-vars": add { "caughtErrorsIgnorePattern": "ignore" }
