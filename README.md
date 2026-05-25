@@ -9,24 +9,28 @@ In your Haraka module:
 
 1. Add to NPM dependencies:
 
-`npm install --save-dev @haraka/eslint-config`
+`npm install --save-dev @haraka/eslint-config eslint`
 
-2. Configure eslint:
+2. Configure ESLint with a flat config (`eslint.config.mjs`):
 
-```sh
-cat  <<EOLINT > eslint.config.mjs
-env:
-  node: true
-  es6: true
-  es2024: true
-extends: "@haraka"
-EOLINT
+```js
+import haraka from '@haraka/eslint-config'
+
+export default [
+  ...haraka,
+  {
+    // project-specific overrides
+    rules: {
+      'no-unused-vars': ['warn', { caughtErrorsIgnorePattern: '^ignore' }],
+    },
+  },
+]
 ```
 
 3. Add to the "scripts" section of `package.json`:
 
 ```json
-"lint": "npx eslint *.js test"
+"lint": "npx eslint *.js test",
 "lint:fix": "npx eslint --fix *.js test"
 ```
 
@@ -34,17 +38,44 @@ EOLINT
 
 `npm run lint`
 
+## Upgrading from 2.x
+
+The 3.x release migrates `@haraka/eslint-config` from the legacy `.eslintrc`
+shape to a flat-config array. Consumers no longer need `@eslint/eslintrc` /
+`FlatCompat`. Replace the old wrapper:
+
+```js
+// before
+import { FlatCompat } from '@eslint/eslintrc'
+const compat = new FlatCompat({ baseDirectory: __dirname, ... })
+export default [...compat.extends('@haraka'), { /* overrides */ }]
+```
+
+with:
+
+```js
+// after
+import haraka from '@haraka/eslint-config'
+export default [
+  ...haraka,
+  {
+    /* overrides */
+  },
+]
+```
+
+Peer dependency is now `eslint@^10`.
+
 ## Usage
 
 To check your project against lint rules:
 
 `npm run lint`
 
-Step #4 above does this automatically when CI tests are set up.
+If you agree with the lint suggestions, run `npm run lint:fix` and the
+changes will be made to your files automatically.
 
-If you agree with the lint suggestions, you can run `npm run lint:fix` and the changes will be made to your files automatically.
-
-Custom rules can be added to the eslint config file.
+Custom rules can be added directly in the consumer's `eslint.config.mjs`.
 
 <!-- leave these buried at the bottom of the document -->
 

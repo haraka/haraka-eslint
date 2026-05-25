@@ -4,6 +4,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [3.0.0] - 2026-05-24
+
+- BREAKING: depend on eslint 10
+- BREAKING: export a flat-config array from `index.js` (was a legacy `.eslintrc` object)
+- package: `type: module`; ship as ESM
+- deps: drop `@eslint/eslintrc` peer (consumers no longer need FlatCompat)
+- deps: declare runtime deps on `@eslint/js` and `globals` (were peers)
+- doc(README): document flat-config consumer pattern and 2.x→3.0 migration
+
 ### [2.0.4] - 2026-03-17
 
 - deps(all): added ^versions in package.json
@@ -143,3 +152,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [2.0.1]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.1
 [2.0.2]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.2
 [2.0.3]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.3
+[2.0.4]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.4
+[3.0.0]: https://github.com/haraka/haraka-eslint/releases/tag/v3.0.0
