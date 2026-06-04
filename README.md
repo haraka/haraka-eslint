@@ -1,7 +1,6 @@
 # haraka-eslint
 
-[![Build Status][ci-img]][ci-url]
-[![Code Climate][clim-img]][clim-url]
+[![Build][ci-img]][ci-url] [![Cover][cov-img]][cov-url] [![Qlty][qlty-img]][qlty-url]
 
 ## Install
 
@@ -81,5 +80,7 @@ Custom rules can be added directly in the consumer's `eslint.config.mjs`.
 
 [ci-img]: https://github.com/haraka/haraka-eslint/actions/workflows/ci.yml/badge.svg
 [ci-url]: https://github.com/haraka/haraka-eslint/actions/workflows/ci.yml
-[clim-img]: https://codeclimate.com/github/haraka/haraka-eslint/badges/gpa.svg
-[clim-url]: https://codeclimate.com/github/haraka/haraka-eslint
+[cov-img]: https://codecov.io/github/haraka/haraka-eslint/coverage.svg
+[cov-url]: https://codecov.io/github/haraka/haraka-eslint
+[qlty-img]: https://qlty.sh/gh/haraka/projects/haraka-eslint/maintainability.svg
+[qlty-url]: https://qlty.sh/gh/haraka/projects/haraka-eslint
