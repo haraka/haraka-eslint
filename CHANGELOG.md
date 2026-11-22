@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ### [3.0.1] - 2026-11-21
 
 - packaging / meta updates (#42)
+- deps: bump globals version
 
 ### [3.0.0] - 2026-05-24
 
