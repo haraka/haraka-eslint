@@ -1,6 +1,6 @@
 {
   "name": "@haraka/eslint-config",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "eslint config for Haraka projects",
   "keywords": [
     "haraka",
@@ -41,7 +41,7 @@
   "homepage": "https://github.com/haraka/haraka-eslint#readme",
   "dependencies": {
     "@eslint/js": "^10.0.1",
-    "globals": "^17.6.0"
+    "globals": "^17.14.0"
   },
   "peerDependencies": {
     "eslint": "^10.0.0"
