@@ -55,12 +55,7 @@ with:
 ```js
 // after
 import haraka from '@haraka/eslint-config'
-export default [
-  ...haraka,
-  {
-    /* overrides */
-  },
-]
+export default [...haraka, {/* overrides */}]
 ```
 
 Peer dependency is now `eslint@^10`.

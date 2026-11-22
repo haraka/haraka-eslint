@@ -4,6 +4,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [3.0.1] - 2026-11-21
+
+- packaging / meta updates (#42)
+- deps: bump globals version
+
 ### [3.0.0] - 2026-05-24
 
 - BREAKING: depend on eslint 10
@@ -154,3 +159,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [2.0.3]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.3
 [2.0.4]: https://github.com/haraka/haraka-eslint/releases/tag/v2.0.4
 [3.0.0]: https://github.com/haraka/haraka-eslint/releases/tag/v3.0.0
+[3.0.1]: https://github.com/haraka/haraka-eslint/releases/tag/v3.0.1
